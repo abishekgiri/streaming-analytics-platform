@@ -1,0 +1,5 @@
+kafka-python-ng==2.2.2
+avro==1.11.3
+requests==2.31.0
+click==8.1.7
+faker==22.5.1

@@ -1,0 +1,18 @@
+{
+  "namespace": "com.platform.events",
+  "type": "record",
+  "name": "ClickstreamEvent",
+  "fields": [
+    {"name": "event_id", "type": "string", "doc": "Unique UUID for deduplication"},
+    {"name": "user_id", "type": "string"},
+    {"name": "session_id", "type": "string"},
+    {"name": "event_type", "type": "string", "doc": "view, click, or purchase"},
+    {"name": "event_ts", "type": "long", "logicalType": "timestamp-millis", "doc": "Producer timestamp (event time)"},
+    {"name": "ingest_ts", "type": "long", "logicalType": "timestamp-millis", "doc": "Processing timestamp"},
+    {"name": "source", "type": "string", "default": "unknown"},
+    {"name": "campaign_id", "type": ["null", "string"], "default": null},
+    {"name": "device", "type": "string", "default": "unknown"},
+    {"name": "geo", "type": "string", "default": "unknown"},
+    {"name": "schema_version", "type": "string", "default": "v1"}
+  ]
+}
