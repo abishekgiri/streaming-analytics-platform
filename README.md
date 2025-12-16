@@ -177,7 +177,8 @@ The Grafana dashboard tells a complete production readiness story across three o
 
 #### 3️ **Under Load – Checkpoint Stress**
 ![Checkpoint Stress](docs/screenshots/checkpoint-stress.png)
-![Uploading Screenshot 2025-12-16 at 6.04.52 AM.png…]()
+
+<img width="1086" height="425" alt="Screenshot 2025-12-16 at 6 04 52 AM" src="https://github.com/user-attachments/assets/d4b2b357-2562-4426-9c0e-5a6fec2ee13a" />
 
 - **Throughput**: ~700 records/sec (sustained under dual-sink commit pressure)
 - **Backpressure**: 0% (maintains green status)
